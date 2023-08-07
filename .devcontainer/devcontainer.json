@@ -1,5 +1,10 @@
 {
 	"image": "mcr.microsoft.com/devcontainers/python:0-3.11",
+	"hostRequirements": {
+   "cpus": 16,
+   "memory": "64gb",
+   "storage": "128gb"
+},
 	"waitFor": "onCreateCommand",
 	"onCreateCommand": "pip3 install --user -r requirements.txt",
 	"postCreateCommand": "",
